@@ -1,0 +1,271 @@
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>花と布のクラフトショップ</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333;
+  }
+  .section {
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  .item {
+    text-align: center;
+  }
+  .item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  .item img:hover {
+    transform: scale(1.05);
+  }
+  .item p {
+    margin-top: 10px;
+    font-size: 1.1em;
+  }
+  .workshop-info {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  nav {
+    margin-top: 20px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 15px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+  }
+  .hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  .hero h2 {
+    font-size: 3em;
+    border-bottom: none;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>
+      花と布のクラフトショップ
+      <img src="images/momsShopsLogo.png" alt="ロゴ" width="150" height="150" style="margin-left: 50px; margin-bottom: -20px;">
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="#potted-plants">草花の鉢</a></li>
+        <li><a href="#artificial-flowers">アーティフィシャルフラワー</a></li>
+        <li><a href="#fabrics">洋服の生地</a></li>
+        <li><a href="#workshop">ワークショップ</a></li>
+        <li><a href="#baked-goods">焼き菓子</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero" style="background-image: url('images/ArtificialFlower1.png');">
+    <h2>自然の美しさを日常に</h2>
+  </div>
+  </div>
+
+  <div class="container">
+    <section id="potted-plants" class="section">
+      <h2>草花の鉢</h2>
+      <div class="grid">
+        <div class="item">
+          <img src="images/containerGardening-removebg-preview.png" alt="緑豊かな観葉植物の鉢" width="300" height="300">
+          <p>店内：寄せ植え</p>
+        </div>
+        <div class="item">
+          <img src="images/hangingFlowerBasket-removebg-preview.png" alt="カラフルな花の鉢植え" width="300" height="300" style="margin-top: 100px;">
+          <p style="margin-top: 75px;">店外：季節の花</p>
+        </div>
+        <!-- <div class="item">
+          <img src="gift-wrapping.jpg" alt="籠に入れてラッピングされた鉢植え" width="300" height="300">
+          <p>ギフトラッピング</p>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="artificial-flowers" class="section">
+      <h2>アーティフィシャルフラワー（造花）</h2>
+      <div class="grid">
+        <div class="item">
+          <img src="images/ArtificialFlower1.png" alt="色とりどりの造花の陳列" width="300" height="300">
+          <p>リース</p>
+        </div>
+        <div class="item">
+          <img src="images/ArtificialFlower2.png" alt="美しいリース" width="300" height="300">
+          <p>スワッグ</p>
+        </div>
+        <!-- <div class="item">
+          <img src="swag.jpg" alt="エレガントなスワッグ" width="300" height="300">
+          <p>スワッグ</p>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="fabrics" class="section">
+      <h2>洋服の生地</h2>
+      <div class="grid">
+        <div class="item">
+          <!-- ここを直す（左から1番目の洋服画像） -->
+          <img src="images/ダウンロード1.jpg" alt="透明な袋に入った様々な色や柄の生地サンプル" width="300" height="300">
+          <p>着分にカットした生地サンプル</p>
+        </div>
+        <div class="item">
+          <!-- ここを直す（左から2番目の洋服画像） -->
+          <img src="images/image.png" alt="サンプルの洋服を着たマネキン" width="300" height="300">
+          <p>ボディに着せた見本の洋服</p>
+        </div>
+        <div class="item">
+          <!-- ここを直す（左から3番目の洋服画像） -->
+          <img src="images/リバティ.jpg" alt="多様な色と柄の生地" width="300" height="300">
+          <p>豊富な生地のセレクション</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="workshop">
+      <h2>ワークショップ情報</h2>
+      <p>
+        <img src="images/ArtificialFlower1.png" alt="ワークショップの様子" width="230" height="230" style="float: right; margin-left: 10px; margin-top: -100px;">
+        <p>アーティフィシャルフラワーや洋服の生地をご購入のお客様は、無料で作り方をお教えします。</p>
+        <p>ワークスペースのご利用は1時間500円となります。</p>
+        <P>草花の鉢をご購入のお客様向けに、寄せ植えやハンギング、リース作成のレッスンも無料で承ります。<br>（材料費別途）</P>
+      </p>
+      <a href="workshopDetails.html"><button class="googleButton">詳細</button></a>
+    </section>
+
+    <style>
+      /* Google-like UI */
+      section#workshop {
+        background-color: #f9f9f9;
+        border: 1px solid #e0e0e0;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 8px;
+      }
+
+      section#workshop h2 {
+        font-size: 1.8em;
+        border-bottom: 2px solid #f0f0f0;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      section#workshop p {
+        margin-top: 10px;
+        font-size: 1.1em;
+        color: #333;
+      }
+
+      section#workshop img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+
+      section#workshop img:hover {
+        transform: scale(1.05);
+      }
+
+      section#workshop a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.1em;
+        padding: 10px 20px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+    </style>
+    </section>
+    </section>
+
+    <style>
+      .spacer {
+        height: 150px;
+      }
+    </style>
+
+    <div class="spacer"></div>
+
+    <section id="baked-goods" class="section">
+      <h2>焼き菓子コーナー</h2>
+      <p>お客様のご要望にお応えして、焼き菓子も取り扱いを開始しました。花や布と一緒に、素敵なギフトを作りませんか？</p>
+      <div class="grid">
+        <div class="item">
+          <img src="images/さぶれ　フィナンシェ.jpg" alt="様々な焼き菓子の陳列" width="300" height="300">
+          <p>焼き菓子各種</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // スムーズスクロール
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
