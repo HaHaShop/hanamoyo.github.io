@@ -15,7 +15,7 @@
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 100%; /* 画面幅に合わせて最大幅を調整 */
       margin: 0 auto;
       padding: 20px;
     }
@@ -52,7 +52,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* レスポンシブ対応 */
       gap: 30px;
     }
 
@@ -140,7 +140,7 @@
 
     .workshop-text {
       text-align: left;
-      max-width: 600px;
+      max-width: 100%; /* レスポンシブ対応 */
     }
 
     .workshop-image {
@@ -179,23 +179,7 @@
       height: 150px;
     }
 
-    @media (min-width: 768px) {
-      .workshop-content {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-      }
-
-      .workshop-text {
-        flex: 1;
-        padding-right: 20px;
-      }
-
-      .workshop-image {
-        flex: 0 0 230px;
-      }
-    }
-
+    /* メディアクエリの修正 */
     @media (max-width: 767px) {
       h1 {
         font-size: 2em;
@@ -210,20 +194,19 @@
       }
 
       .grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* モバイルでは1カラム */
       }
 
       .item img {
-        max-width: 80%;
+        max-width: 100%; /* 画像の最大幅を100%に */
       }
 
       .workshop-content {
-        flex-direction: column-reverse;
+        flex-direction: column; /* モバイルでは縦並びに */
       }
 
       .workshop-text {
-        flex: 1;
-        padding-right: 20px;
+        padding-right: 0; /* モバイルではパディングを削除 */
       }
     }
   </style>

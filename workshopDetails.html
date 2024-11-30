@@ -14,7 +14,7 @@
             color: #333;
         }
         .container {
-            max-width: 1200px;
+            max-width: 100%; /* 画面幅に合わせて最大幅を調整 */
             margin: 0 auto;
             padding: 20px;
         }
@@ -62,6 +62,19 @@
             color: #333;
             font-size: 1.1em;
         }
+        /* レスポンシブ対応 */
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .workshop-info img {
+                max-width: 100%; /* 画像の最大幅を100%に */
+                height: auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -89,7 +102,6 @@
             </div>
             <a href="https://forms.gle/6k1rVZHWpVxdvG2Z8"><button class="googleButton" disabled
                     style="background-color: rgba(128, 128, 128, 0.5);">予約（※現在できません）</button></a>
-        </section>
         </section>
     </div>
 </body>
