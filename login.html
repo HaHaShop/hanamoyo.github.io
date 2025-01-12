@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-form">
+        <input type="password" id="password" placeholder="パスワードを入力">
+        <button onclick="checkPassword()">ログイン</button>
+    </div>
+    <script>
+    function checkPassword() {
+        const password = document.getElementById('password').value;
+        if (password === 'yoihanaya') {
+            // パスワードが正しい場合
+            sessionStorage.setItem('isAuthenticated', 'true');
+            window.location.href = 'index.html';
+        } else {
+            alert('パスワードが間違っています');
+        }
+    }
+    </script>
+</body>
+</html>
